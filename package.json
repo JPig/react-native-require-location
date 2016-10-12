@@ -1,0 +1,23 @@
+{
+  "name": "react-native-require-location",
+  "version": "0.0.5",
+  "description": "A react-native component for requiring location services in an application",
+  "author": "",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "react-native-module",
+    "android",
+    "android-location-services",
+    "geo-location",
+    "location-services",  
+    "require-location-services",
+    "react-native-require-location",
+    "react-native-location-services"    
+  ],
+  "peerDependencies": {
+    "react-native": "^0.32.0"
+  }
+}

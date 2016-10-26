@@ -103,11 +103,9 @@ public class LocationServicesRequiredModule extends ReactContextBaseJavaModule i
               
         //Show Dialog    
         builder.create().show();
-    }
-     
+    }     
     
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {      
+    public void handleActivityResult(int requestCode, int resultCode, Intent data) {
       if (requestCode == 1234) {
         switch (resultCode) {          
             case Activity.RESULT_CANCELED:            
@@ -119,6 +117,14 @@ public class LocationServicesRequiredModule extends ReactContextBaseJavaModule i
               break;            
         }        
       }
+    }    
+
+    public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {      
+      handleActivityResult(requestCode, resultCode, data);
+    }    
+
+    public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {      
+      handleActivityResult(requestCode, resultCode, data);
     }
     
     @ReactMethod

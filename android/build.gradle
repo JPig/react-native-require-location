@@ -29,6 +29,6 @@ repositories {
 }
 
 dependencies {
-    compile 'com.google.android.gms:play-services-location:9.6.1'
-    compile 'com.facebook.react:react-native:0.19.+'
+    compile 'com.google.android.gms:play-services-location:9.+'
+    compile 'com.facebook.react:react-native:+'
 }

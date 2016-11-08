@@ -11,19 +11,16 @@ import android.content.IntentSender;
 import android.location.LocationManager;
 import android.text.Html;
 import com.facebook.react.bridge.*;
-
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.os.Build;
 import android.text.TextUtils;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.api.PendingResult;
-
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
@@ -200,6 +197,11 @@ public class LocationServicesRequiredModule extends ReactContextBaseJavaModule i
             }
         });       
       
+    }
+    
+    @Override
+    public void onNewIntent(Intent intent) {
+      //Stop deprecation build errors
     }
    
     //****** HELPERS **********//

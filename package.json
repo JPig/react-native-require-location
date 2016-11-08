@@ -1,6 +1,10 @@
 {
   "name": "react-native-require-location",
-  "version": "0.0.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPig/react-native-require-location.git"
+  },
+  "version": "0.0.8",
   "description": "A react-native component for requiring location services in an application",
   "author": "",
   "main": "index.js",
@@ -18,6 +22,6 @@
     "react-native-location-services"    
   ],
   "peerDependencies": {
-    "react-native": "^0.32.0"
+    "react-native": "^0.36.0"
   }
 }
